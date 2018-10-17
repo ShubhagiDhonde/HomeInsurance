@@ -1,0 +1,102 @@
+<div class="container">
+	<div class="row text-center">
+		<div class="col-12 text-center align-self-center">
+			<h3>Property Details</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-4 align-self-center">
+			<img width="100%"src="https://d2cax41o7ahm5l.cloudfront.net/cs/venue/venuehotelimage1-1234.jpg">
+		</div>
+		<div class="col-8 align-self-center">
+			<form name="getQuote" action="getQuote?action=propertyEntry"
+				method="post">
+				<div class="form-group row">
+					 <label class="col-6 col-form-label">What is the market value of your home? *</label>
+					 <div class="col-6">
+						 <input class="form-control" type="text"  name="marketValue" required>
+					 </div>
+				</div>
+				<div class="form-group row">
+					 <label  class="col-6 col-form-label">What year was your home originally built? *</label>
+					 <div class="col-6">
+					    <input class="form-control" type="number"  name="yearBuilt" required>
+					 </div>
+				</div>
+				<div class="form-group row">
+					 <label class="col-6 col-form-label">Square footage *</label>
+					 <div class="col-6">
+					    <input class="form-control" type="number" name="squareFootage" required>
+					 </div>
+				</div>
+				<div class="form-group row">
+					<label class="col-6 col-form-label">Dwelling style *</label> 
+					<div class="col-6">
+						<select name="dwellingStyle" class="form-control" required>
+							<option value="1">1 story</option>
+							<option value="1.5">1.5 story</option>
+							<option value="2">2 story</option>
+							<option value="2.5">2.5 story</option>
+							<option value="3">3 story</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-6 col-form-label">Roof Material *</label>
+					<div class="col-6">
+						<select name="rootMaterial"
+							class="form-control" required>
+							<option value="Concrete">Concrete</option>
+							<option value="Clay">Clay</option>
+							<option value="Rubber">Rubber</option>
+							<option value="Steel">Steel</option>
+							<option value="Tin">Tin</option>
+							<option value="Wood">Wood</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-6 col-form-label">Type of Garage *</label>
+					<div class="col-6">
+						<select name="garageType"
+							class="form-control" required>
+							<option value="Attached">Attached</option>
+							<option value="Detached">Detached</option>
+							<option value="Basement">Basement</option>
+							<option value="Builtin">Built-in</option>
+							<option value="None">None</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group row">
+					 <label for="example-text-input" class="col-6 col-form-label">Number of full Baths *</label>
+					 <div class="col-6">
+					    <input class="form-control" type="number" name="fullBaths" required>
+					 </div>
+				</div>
+				<div class="form-group row">
+					 <label for="example-text-input" class="col-6 col-form-label">Number of half Baths *</label>
+					 <div class="col-6">
+					    <input class="form-control" type="number" name="halfBaths" required>
+					 </div>
+				</div>
+				<div class="form-group row">
+			      <label class="col-6 col-form-label">Does your home have a swimming pool? *</label>
+			      <div class="col-6">
+			        <div class="form-check form-check-inline">
+					  <label class="form-check-label">
+					    <input class="form-check-input" type="radio" name="Pool" value="Yes"> Yes
+					  </label>
+					</div>
+					<div class="form-check form-check-inline">
+					  <label class="form-check-label">
+					    <input class="form-check-input" type="radio" name="Pool" value="No" checked="check"> No
+					  </label>
+					</div>
+			      </div>
+			    </div>
+				<button type="submit" class="btn btn-primary">Continue</button>
+			</form>
+		</div>
+	</div>
+</div>

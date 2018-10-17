@@ -1,0 +1,65 @@
+<div class="container">
+	<div class="row text-center">
+		<div class="col-12 text-center align-self-center">
+			<h3>Get Quote</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-4 align-self-center">
+			<img width="100%"src="https://d2cax41o7ahm5l.cloudfront.net/cs/venue/venuehotelimage1-1234.jpg">
+		</div>
+		<div class="col-8 align-self-center">
+			<form name="getQuote" action="getQuote?action=locationEntry"
+				method="post">
+				<div class="form-group">
+					<label>Residential Type *</label> <select name="residencyType"
+						class="form-control">
+						<option value="Single-Family Home">Single-Family Home</option>
+						<option value="Condo">Condo</option>
+						<option value="Townhouse">Townhouse</option>
+						<option value="Rowhouse">Rowhouse</option>
+						<option value="Duplex">Duplex</option>
+						<option value="Apartment">Apartment</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label>Address Line 1 *</label> <input name="addressLine1"
+						type="text" class="form-control" required>
+				</div>
+				<div class="form-group">
+					<label>Address Line 2</label> <input name="addressLine2"
+						type="text" class="form-control">
+				</div>
+				<div class="form-row">
+					<div class="form-group col-7">
+						<label for="inputCity">City *</label> <input name="inputCity"
+							type="text" class="form-control" id="inputCity" required>
+					</div>
+					<div class="form-group col">
+						<label for="inputState">State *</label> <input name="inputState"
+							type="text" class="form-control" id="inputState" required>
+					</div>
+					<div class="form-group col">
+						<label for="inputZip">Zip *</label> <input name="inputZip"
+							type="number" class="form-control" id="inputZip" required>
+					</div>
+				</div>
+				<div class="form-group">
+					<label>Residence Use *</label> <select name="residenceUse"
+						class="form-control" required>
+						<option value="Primary">Primary</option>
+						<option value="Secondary">Secondary</option>
+						<option value="Rental Property">Rental Property</option>
+					</select>
+				</div>
+				<button type="submit" class="btn btn-primary">Continue</button>
+			</form>
+		</div>
+	</div>
+	<style>
+		  .footer{
+		  		position: absolute;
+		  		background-color: black;
+		  }
+	</style>
+</div>
